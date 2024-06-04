@@ -8,11 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		9D44AC862C0706C6006DBD24 /* SwiftUINavigations.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D44AC852C0706C6006DBD24 /* SwiftUINavigations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D44AC8D2C070B1C006DBD24 /* SwiftUINavigations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D44AC8C2C070B1C006DBD24 /* SwiftUINavigations.swift */; };
+		9D44AC8F2C070B2A006DBD24 /* EmptyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D44AC8E2C070B2A006DBD24 /* EmptyLog.swift */; };
+		9D44AC912C070B30006DBD24 /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D44AC902C070B30006DBD24 /* DebugLog.swift */; };
+		ABB4F692F7F408661D992602 /* Pods_SwiftUINavigations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317F079C76439F032336BCF4 /* Pods_SwiftUINavigations.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		317F079C76439F032336BCF4 /* Pods_SwiftUINavigations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUINavigations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		533FAB9726A0BD28B3191D1A /* Pods-SwiftUINavigations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUINavigations.release.xcconfig"; path = "Target Support Files/Pods-SwiftUINavigations/Pods-SwiftUINavigations.release.xcconfig"; sourceTree = "<group>"; };
 		9D44AC822C0706C6006DBD24 /* SwiftUINavigations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUINavigations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D44AC852C0706C6006DBD24 /* SwiftUINavigations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftUINavigations.h; sourceTree = "<group>"; };
+		9D44AC8C2C070B1C006DBD24 /* SwiftUINavigations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUINavigations.swift; sourceTree = "<group>"; };
+		9D44AC8E2C070B2A006DBD24 /* EmptyLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyLog.swift; sourceTree = "<group>"; };
+		9D44AC902C070B30006DBD24 /* DebugLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugLog.swift; sourceTree = "<group>"; };
+		E3177C7BEB8A4E55F3CBF129 /* Pods-SwiftUINavigations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUINavigations.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUINavigations/Pods-SwiftUINavigations.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,17 +30,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB4F692F7F408661D992602 /* Pods_SwiftUINavigations.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		512A5C224ADA4911FF1EC5A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3177C7BEB8A4E55F3CBF129 /* Pods-SwiftUINavigations.debug.xcconfig */,
+				533FAB9726A0BD28B3191D1A /* Pods-SwiftUINavigations.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9D44AC782C0706C6006DBD24 = {
 			isa = PBXGroup;
 			children = (
 				9D44AC842C0706C6006DBD24 /* SwiftUINavigations */,
 				9D44AC832C0706C6006DBD24 /* Products */,
+				512A5C224ADA4911FF1EC5A0 /* Pods */,
+				E663D424772C67A48A540C62 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,9 +68,20 @@
 		9D44AC842C0706C6006DBD24 /* SwiftUINavigations */ = {
 			isa = PBXGroup;
 			children = (
+				9D44AC8C2C070B1C006DBD24 /* SwiftUINavigations.swift */,
+				9D44AC902C070B30006DBD24 /* DebugLog.swift */,
+				9D44AC8E2C070B2A006DBD24 /* EmptyLog.swift */,
 				9D44AC852C0706C6006DBD24 /* SwiftUINavigations.h */,
 			);
 			path = SwiftUINavigations;
+			sourceTree = "<group>";
+		};
+		E663D424772C67A48A540C62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				317F079C76439F032336BCF4 /* Pods_SwiftUINavigations.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D44AC892C0706C6006DBD24 /* Build configuration list for PBXNativeTarget "SwiftUINavigations" */;
 			buildPhases = (
+				629ED4F8510435133929E659 /* [CP] Check Pods Manifest.lock */,
 				9D44AC7D2C0706C6006DBD24 /* Headers */,
 				9D44AC7E2C0706C6006DBD24 /* Sources */,
 				9D44AC7F2C0706C6006DBD24 /* Frameworks */,
@@ -93,6 +128,7 @@
 				TargetAttributes = {
 					9D44AC812C0706C6006DBD24 = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -124,11 +160,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		629ED4F8510435133929E659 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUINavigations-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9D44AC7E2C0706C6006DBD24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D44AC8F2C070B2A006DBD24 /* EmptyLog.swift in Sources */,
+				9D44AC8D2C070B1C006DBD24 /* SwiftUINavigations.swift in Sources */,
+				9D44AC912C070B30006DBD24 /* DebugLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +326,10 @@
 		};
 		9D44AC8A2C0706C6006DBD24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3177C7BEB8A4E55F3CBF129 /* Pods-SwiftUINavigations.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -273,6 +340,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -285,6 +353,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -292,7 +361,10 @@
 		};
 		9D44AC8B2C0706C6006DBD24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 533FAB9726A0BD28B3191D1A /* Pods-SwiftUINavigations.release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -303,6 +375,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
